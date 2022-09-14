@@ -10,7 +10,7 @@ class class_jadwal{
         }
 
         function getAll(){
-            $data=$this->con->query("Select j.id, j.ruang, j.waktu, m.nama as nama_matkul, d.nama as nama_dosen from jadwal j INNER JOIN matkul m on j.kode_matkul=m.kode_matkul INNER JOIN dosen d ON j.kode_dosen=d.kode_dosen ");
+            $data=$this->con->query("select jadwal.id, jadwal.ruang, jadwal.waktu, matkul.nama_matkul, dosen.nama_dosen from jadwal INNER JOIN matkul on jadwal.kode_matkul=matkul.kode_matkul INNER JOIN dosen ON jadwal.kode_dosen=dosen.kode_dosen");
             return $data;
         }
 

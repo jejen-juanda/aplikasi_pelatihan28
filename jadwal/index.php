@@ -4,9 +4,7 @@ include('class_jadwal.php');
 $jadwal=new class_jadwal;
 $data=$jadwal->getAll();
 
-
 ?>
-
 
 <html>
     <head>
@@ -52,7 +50,6 @@ $data=$jadwal->getAll();
                 </td>
                     
                 </tr>
-
 
 <?php
             }

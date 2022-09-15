@@ -42,5 +42,4 @@ $data=$matkul->getMatkulByID(1);
 print_r($data->fetch_assoc());
 */
 
-
 ?>

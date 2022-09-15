@@ -4,9 +4,7 @@ include('class_dosen.php');
 $dosen=new class_dosen;
 $data=$dosen->getAll();
 
-
 ?>
-
 
 <html>
     <head>

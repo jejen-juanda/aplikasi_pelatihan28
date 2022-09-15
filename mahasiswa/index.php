@@ -4,9 +4,7 @@ include('class_mahasiswa.php');
 $mahasiswa=new class_mahasiswa;
 $data=$mahasiswa->getAll();
 
-
 ?>
-
 
 <html>
     <head>

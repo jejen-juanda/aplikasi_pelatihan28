@@ -15,7 +15,7 @@ $dataDosen=$jadwal->getDosen();
         <form action="#" method="post">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
             <p><label>Pilih Matkul : </label>
-        <select name="kode_matkul">
+        <select name="kode_matkul" title="Mata Kuliah">
             <?php
             while($rec =$dataMatkul->fetch_array()){?>
             <option value="<?php echo $rec['kode_matkul'] ;?>"><?php echo $rec['nama_matkul'] ;?></option>
@@ -24,21 +24,15 @@ $dataDosen=$jadwal->getDosen();
         </select></p>
 
         <p><label>Pilih Dosen : </label>
-        <select name="kode_dosen">
+        <select name="kode_dosen" title="dosen">
             <?php
             while($rec =$dataDosen->fetch_array()){?>
             <option value="<?php echo $rec['kode_dosen'] ;?>"><?php echo $rec['nama_dosen'] ;?></option>
            <?php }
             ?>       
         </select></p>
-
-        <p>
-            <label>Ruang : </label><input type="text" name="ruang">
-                    </p>
-                    <p>
-            <label>Waktu : </label><input type="text" name="waktu">
-                    </p>
-
+        <p><label>Ruang : </label><input type="text" name="ruang" title="ruangan"></p>
+                    <p><label>Waktu : </label><input type="text" name="waktu" title="waktu"></p>
                     <p><button type="submit" name="simpan">Simpan</button></p>
         </form>
         <?php 

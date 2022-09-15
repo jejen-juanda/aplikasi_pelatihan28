@@ -16,7 +16,7 @@ $dataEdit=$jadwal->getJadwalByID($_GET['id'])->fetch_assoc();
         <form action="#" method="post">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
             <p><label>Pilih Matkul : </label>
-        <select name="kode_matkul">
+        <select name="kode_matkul" title="Mata Kuliah">
         <option value="<?php echo $dataEdit['kode_matkul'] ;?>"><?php echo $dataEdit['nama_matkul'] ;?></option>
             <?php
             while($rec =$dataMatkul->fetch_array()){?>
@@ -24,9 +24,8 @@ $dataEdit=$jadwal->getJadwalByID($_GET['id'])->fetch_assoc();
            <?php }
             ?>       
         </select></p>
-
         <p><label>Pilih Dosen : </label>
-        <select name="kode_dosen">
+        <select name="kode_dosen" title="dosen">
         <option value="<?php echo $dataEdit['kode_dosen'] ;?>"><?php echo $dataEdit['nama_dosen'] ;?></option>
             <?php
             while($rec =$dataDosen->fetch_array()){?>
@@ -35,12 +34,8 @@ $dataEdit=$jadwal->getJadwalByID($_GET['id'])->fetch_assoc();
             ?>       
         </select></p>
 
-        <p>
-            <label>Ruang : </label><input type="text" name="ruang" value="<?php echo $dataEdit['ruang'] ;?>">
-                    </p>
-                    <p>
-            <label>Waktu : </label><input type="text" name="waktu" value="<?php echo $dataEdit['waktu'] ;?>">
-                    </p>
+        <p><label>Ruang : </label><input type="text" name="ruang" value="<?php echo $dataEdit['ruang'] ;?>" title="ruangan"></p>
+                    <p><label>Waktu : </label><input type="text" name="waktu" value="<?php echo $dataEdit['waktu'] ;?>" title="waktu"></p>
                     <p><button type="submit" name="simpan">Simpan</button></p>
                     
         </form>
@@ -52,10 +47,6 @@ $dataEdit=$jadwal->getJadwalByID($_GET['id'])->fetch_assoc();
         }
 
         ?>
-
         
     </body>
-
-
-
 </html>

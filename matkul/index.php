@@ -4,9 +4,7 @@ include('class_matkul.php');
 $matkul=new class_matkul;
 $data=$matkul->getAll();
 
-
 ?>
-
 
 <html>
     <head>

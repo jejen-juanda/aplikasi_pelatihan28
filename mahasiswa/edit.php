@@ -15,13 +15,12 @@
     <h1>Edit Mahasiswa</h1>
     <form method="post" action="#">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
-        <p><label>NIM</label> : </label><input name="nim" type="text" value="<?php echo $data_edit['nim'];?>"></p>
-        <p><label>Nama Mahasiswa</label> : </label><input name="nama_mahasiswa" type="text" value="<?php echo $data_edit['nama_mahasiswa'];?>"></p>
-        <p><label>Jurusan</label> : </label><input name="jurusan" type="text" value="<?php echo $data_edit['jurusan'];?>"></p>
-        <p><label>Alamat Mahasiswa: </label><input name="alamat_mahasiswa" type="text" value="<?php echo $data_edit['alamat_mahasiswa'];?>"></p>
+        <p><label>NIM</label> : </label><input name="nim" type="text" value="<?php echo $data_edit['nim'];?>" title="NIM"></p>
+        <p><label>Nama Mahasiswa</label> : </label><input name="nama_mahasiswa" type="text" value="<?php echo $data_edit['nama_mahasiswa'];?>" title="Nama"></p>
+        <p><label>Jurusan</label> : </label><input name="jurusan" type="text" value="<?php echo $data_edit['jurusan'];?>" title="jurusan"></p>
+        <p><label>Alamat Mahasiswa: </label><input name="alamat_mahasiswa" type="text" value="<?php echo $data_edit['alamat_mahasiswa'];?>" title="alamat"></p>
         <p><button name="simpan" type="submit">simpan</button></p>
     </form>
-
 
     <?php
   

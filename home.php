@@ -13,7 +13,7 @@ include('validasi.php');
         <p><a href="mahasiswa">Mahasiswa</a></p>
         <p><a href="matkul">Mata kuliah</a></p>
         <p><a href="jadwal">Jadwal</a></p>
-
+        <p><a href="user">User</a></p>
         <p><a href="logout.php">Logout</a></p>
     </body>
 </html>

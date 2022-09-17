@@ -1,0 +1,5 @@
+TRUNCATE semester;
+load data infile 'd:\\lsp\\semester.txt'
+IGNORE into table semester fields terminated by ','
+enclosed by '"'
+lines terminated by '\r\n';

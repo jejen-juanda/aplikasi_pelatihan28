@@ -1,0 +1,7 @@
+create table jadwal (
+id int (2) not null auto_increment primary key,
+kode_matkul int (12) not null,
+kode_dosen int (12) not null,
+ruang varchar (50) not null default '',
+waktu varchar (50) not null default ''
+);

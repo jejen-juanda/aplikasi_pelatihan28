@@ -1,0 +1,5 @@
+TRUNCATE user;
+load data infile 'd:\\lsp\\user.txt'
+IGNORE into table user fields terminated by ','
+enclosed by '"'
+lines terminated by '\r\n';

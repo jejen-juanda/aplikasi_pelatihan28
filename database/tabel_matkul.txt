@@ -1,0 +1,6 @@
+create table matkul (
+id int (2) not null auto_increment primary key,
+kode_matkul int (12) not null,
+nama_matkul varchar (50) not null default '',
+sks_matkul int (1) not null,
+Unique(kode_matkul));

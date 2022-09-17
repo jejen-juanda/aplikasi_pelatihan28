@@ -1,0 +1,5 @@
+TRUNCATE mahasiswa;
+load data infile 'd:\\lsp\\mahasiswa.txt'
+IGNORE into table mahasiswa fields terminated by ','
+enclosed by '"'
+lines terminated by '\r\n';

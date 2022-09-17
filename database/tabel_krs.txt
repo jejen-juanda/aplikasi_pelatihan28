@@ -1,0 +1,6 @@
+create table krs (
+id int (2) not null auto_increment primary key,
+kode_jadwal int (12) not null,
+nim int (12) not null,
+kode_semester int (12)not null
+);

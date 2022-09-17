@@ -1,0 +1,5 @@
+TRUNCATE matkul;
+load data infile 'd:\\lsp\\matkul.txt'
+IGNORE into table matkul fields terminated by ','
+enclosed by '"'
+lines terminated by '\r\n';

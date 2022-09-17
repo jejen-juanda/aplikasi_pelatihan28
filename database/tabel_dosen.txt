@@ -1,0 +1,6 @@
+create table dosen (
+id int (2) not null auto_increment primary key,
+kode_dosen int (12) not null,
+nama_dosen varchar (50) not null default '',
+alamat_dosen varchar (50) not null default '',
+Unique(kode_dosen));

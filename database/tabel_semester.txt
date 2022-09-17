@@ -1,0 +1,5 @@
+create table semester (
+id int (2) not null auto_increment primary key,
+kode_semester int (12) not null,
+semester varchar (50) not null default '',
+Unique(kode_semester));

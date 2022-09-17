@@ -1,0 +1,5 @@
+create table user (
+id int (2) not null auto_increment primary key,
+user_name varchar (50) not null default '',
+password varchar (100) not null default '',
+Unique(user_name));

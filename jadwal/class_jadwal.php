@@ -6,11 +6,10 @@ class class_jadwal{
         function __construct(){
             $koneksi=new koneksi;
             $this->con=$koneksi->con;
-
         }
 
         function getAll(){
-            $data=$this->con->query("Select j.id, j.ruang, j.waktu, m.nama as nama_matkul, d.nama as nama_dosen from jadwal j INNER JOIN matkul m on j.kode_matkul=m.kode_matkul INNER JOIN dosen d ON j.kode_dosen=d.kode_dosen ");
+            $data=$this->con->query("select jadwal.id, jadwal.ruang, jadwal.waktu, matkul.nama_matkul, dosen.nama_dosen from jadwal INNER JOIN matkul on jadwal.kode_matkul=matkul.kode_matkul INNER JOIN dosen ON jadwal.kode_dosen=dosen.kode_dosen");
             return $data;
         }
 
@@ -31,14 +30,12 @@ class class_jadwal{
 
         function delete($id){
             $this->con->query("delete from jadwal where id='$id'");
-            return true;
-       
+            return true;       
         }
 
         function getJadwalByID($id){
             $data=$this->con->query("Select j.id,j.kode_matkul,j.kode_dosen, j.ruang, j.waktu, m.nama as nama_matkul, d.nama as nama_dosen from jadwal j INNER JOIN matkul m on j.kode_matkul=m.kode_matkul INNER JOIN dosen d ON j.kode_dosen=d.kode_dosen where id='$id'");
             return $data;
-
         }
 
         function edit_data($id,$kode_matkul,$kode_dosen,$ruang,$waktu){

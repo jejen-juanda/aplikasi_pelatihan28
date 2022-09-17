@@ -6,13 +6,12 @@
     <h1>Tambah Mahasiswa</h1>
     <form method="post" action="#">
         <input name="id" type="hidden">
-        <p><label>NIM : </label><input name="nim" type="number"></p>
-        <p><label>Nama Mahasiswa</label> : </label><input name="nama_mahasiswa" type="text"></p>
-        <p><label>jurusan: </label><input name="jurusan" type="text"></p>
-        <p><label>Alamat: </label><input name="alamat_mahasiswa" type="text"></p>
+        <p><label>NIM : </label><input name="nim" type="number" title="NIM"></p>
+        <p><label>Nama Mahasiswa</label> : </label><input name="nama_mahasiswa" type="text" title="Nama"></p>
+        <p><label>jurusan: </label><input name="jurusan" type="text" title="jurusan"></p>
+        <p><label>Alamat: </label><input name="alamat_mahasiswa" type="text" title="alamat"></p>
         <p><button name="simpan" type="submit">simpan</button></p>
     </form>
-
 
     <?php
     include('../validasi.php');

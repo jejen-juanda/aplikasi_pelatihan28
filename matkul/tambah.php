@@ -6,12 +6,11 @@
     <h1>Tambah Matkul</h1>
     <form method="post" action="#">
         <input name="id" type="hidden">
-        <p><label>Kode Matkul : </label><input name="kode_matkul" type="number"></p>
-        <p><label>Matakuliah</label> : </label><input name="nama_matkul" type="text"></p>
-        <p><label>SKS: </label><input name="sks_matkul" type="number"></p>
+        <p><label>Kode Matkul : </label><input name="kode_matkul" type="number" title="Kode Mata Kuliah"></p>
+        <p><label>Matakuliah</label> : </label><input name="nama_matkul" type="text" title="Nama Mata Kuliah"></p>
+        <p><label>SKS: </label><input name="sks_matkul" type="number" title="Jumlah SKS"></p>
         <p><button name="simpan" type="submit">simpan</button></p>
     </form>
-
 
     <?php
     include('../validasi.php');

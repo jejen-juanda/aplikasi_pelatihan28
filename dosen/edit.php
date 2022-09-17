@@ -15,12 +15,11 @@
     <h1>Edit Dosen</h1>
     <form method="post" action="#">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
-        <p><label>Kode Dosen</label> : </label><input name="kode_dosen" type="text" value="<?php echo $data_edit['kode_dosen'];?>"></p>
-        <p><label>Nama Dosen</label> : </label><input name="nama_dosen" type="text" value="<?php echo $data_edit['nama_dosen'];?>"></p>
-        <p><label>Alamat Dosen: </label><input name="alamat_dosen" type="text" value="<?php echo $data_edit['alamat_dosen'];?>"></p>
+        <p><label>Kode Dosen</label> : </label><input name="kode_dosen" type="text" value="<?php echo $data_edit['kode_dosen'];?>" title="kode dosen"></p>
+        <p><label>Nama Dosen</label> : </label><input name="nama_dosen" type="text" value="<?php echo $data_edit['nama_dosen'];?>" title="nama"></p>
+        <p><label>Alamat Dosen: </label><input name="alamat_dosen" type="text" value="<?php echo $data_edit['alamat_dosen'];?>" title="alamat"></p>
         <p><button name="simpan" type="submit">simpan</button></p>
     </form>
-
 
     <?php
   

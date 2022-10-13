@@ -1,9 +1,7 @@
 <?php
 include('class_matkul.php');
-
 $matkul=new class_matkul;
 $data=$matkul->getAll();
-
 ?>
 
 <html>
@@ -22,6 +20,7 @@ $data=$matkul->getAll();
         </style>
     </head>
     <body>
+        <p><a href="../home.php">Home</a></p>
         <h1>Data Mata Kuliah</h1>
      
         <p><a href="tambah.php"><button>Tambah</button></a></p>

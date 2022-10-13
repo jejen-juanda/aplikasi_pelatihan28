@@ -1,11 +1,8 @@
 <?php
 include('class_dosen.php');
-
 $dosen=new class_dosen;
 $data=$dosen->getAll();
-
 ?>
-
 <html>
     <head>
 <title>Web Universitas Terpadu</title>
@@ -13,7 +10,6 @@ $data=$dosen->getAll();
         table, td, th {
             border: 1px solid;
             }
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -22,9 +18,8 @@ $data=$dosen->getAll();
         </style>
     </head>
     <body>
-        <h1>Data Dosen</h1>
-     
-        <p><a href="tambah.php"><button>Tambah</button></a></p>
+        <p><a href="../home.php">Home</a></p>
+        <h1>Data Dosen</h1>     
         <table style="border:1px solid ;">
             <tr>
                 <th>No</th>
@@ -53,5 +48,6 @@ $data=$dosen->getAll();
             }
             ?>
         </table>
+        <p><a href="tambah.php"><button>Tambah</button></a></p>
     </body>
 </html>

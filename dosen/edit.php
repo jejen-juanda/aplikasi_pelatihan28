@@ -1,7 +1,6 @@
 <?php
   include('../validasi.php');
   include('class_dosen.php');
-
   $dosen=new class_dosen;
   $data=$dosen->getDosenByID($_GET['id']);
   $data_edit=$data->fetch_assoc();
@@ -10,8 +9,8 @@
 <head>
 <title>Web Universitas Terpadu</title>
 </head>
-
 <body>
+        <p><a href="../home.php">Home</a></p>
     <h1>Edit Dosen</h1>
     <form method="post" action="#">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
@@ -20,7 +19,7 @@
         <p><label>Alamat Dosen: </label><input name="alamat_dosen" type="text" value="<?php echo $data_edit['alamat_dosen'];?>" title="alamat"></p>
         <p><button name="simpan" type="submit">simpan</button></p>
     </form>
-
+        <p><a href="index.php">Back</a></p>
     <?php
   
     if(isset($_POST['simpan'])){

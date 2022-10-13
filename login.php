@@ -7,6 +7,7 @@
         <form action="#" method="post"><p><label>Username :</label><input type="text" name="username" title="User Name"></p>
         <p><label>Password :</label><input type="password" name="password" title="Password"></p>
         <p><button type="submit" name="submit">Login</button></p></form>
+        <p><a href="user/register.php">Register</a></p>
         <?php
         include('koneksi.php');
         $koneksi=new koneksi;

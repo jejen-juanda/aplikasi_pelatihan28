@@ -22,6 +22,7 @@ $data=$user->getAll();
         </style>
     </head>
     <body>
+        <p><a href="../home.php">Home</a></p>
         <h1>Data User</h1>
      
         <p><a href="tambah.php"><button>Tambah</button></a></p>

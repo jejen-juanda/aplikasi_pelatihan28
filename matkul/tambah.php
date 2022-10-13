@@ -3,6 +3,7 @@
 <title>Web Universitas Terpadu</title>
 </head>
 <body>
+        <p><a href="../home.php">Home</a></p>
     <h1>Tambah Matkul</h1>
     <form method="post" action="#">
         <input name="id" type="hidden">
@@ -11,7 +12,7 @@
         <p><label>SKS: </label><input name="sks_matkul" type="number" title="Jumlah SKS"></p>
         <p><button name="simpan" type="submit">simpan</button></p>
     </form>
-
+        <p><a href="index.php">Back</a></p>
     <?php
     include('../validasi.php');
     include('class_matkul.php');

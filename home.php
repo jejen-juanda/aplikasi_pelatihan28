@@ -1,8 +1,6 @@
 <?php
 include('validasi.php');
-
 ?>
-
 <html>
 <head>
 <title>Web Universitas Terpadu</title>

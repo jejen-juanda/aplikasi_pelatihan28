@@ -12,6 +12,7 @@ $dataEdit=$jadwal->getJadwalByID($_GET['id'])->fetch_assoc();
 <title>Web Universitas Terpadu</title>
 </head>
     <body>
+        <p><a href="../home.php">Home</a></p>
         <h1>Edit Jadwal</h1>
         <form action="#" method="post">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
@@ -36,9 +37,9 @@ $dataEdit=$jadwal->getJadwalByID($_GET['id'])->fetch_assoc();
 
         <p><label>Ruang : </label><input type="text" name="ruang" value="<?php echo $dataEdit['ruang'] ;?>" title="ruangan"></p>
                     <p><label>Waktu : </label><input type="text" name="waktu" value="<?php echo $dataEdit['waktu'] ;?>" title="waktu"></p>
-                    <p><button type="submit" name="simpan">Simpan</button></p>
-                    
+                    <p><button type="submit" name="simpan">Simpan</button></p>                    
         </form>
+        <p><a href="index.php">Back</a></p>
         <?php 
            if(isset($_POST['simpan'])){
             

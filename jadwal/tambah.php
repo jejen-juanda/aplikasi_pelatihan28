@@ -11,6 +11,7 @@ $dataDosen=$jadwal->getDosen();
 <title>Web Universitas Terpadu</title>
 </head>
     <body>
+        <p><a href="../home.php">Home</a></p>
         <h1>Tambah Jadwal</h1>
         <form action="#" method="post">
         <input name="id" type="hidden" value="<?php echo $data_edit['id'];?>">
@@ -35,6 +36,7 @@ $dataDosen=$jadwal->getDosen();
                     <p><label>Waktu : </label><input type="text" name="waktu" title="waktu"></p>
                     <p><button type="submit" name="simpan">Simpan</button></p>
         </form>
+        <p><a href="index.php">Back</a></p>
         <?php 
            if(isset($_POST['simpan'])){
      
